@@ -1,0 +1,14 @@
+{
+  "name": "echokid-prototype",
+  "private": true,
+  "description": "EchoKid redesign prototype: parent app and moderator console, plain scripts with no build step.",
+  "scripts": {
+    "test": "node tests/run.js",
+    "test:logic": "node tests/run.js logic",
+    "test:parent": "node tests/run.js parent",
+    "test:console": "node tests/run.js console",
+    "test:bridge": "node tests/run.js bridge",
+    "serve": "python -m http.server 8080"
+  },
+  "engines": { "node": ">=22" }
+}

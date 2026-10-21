@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>EchoKid Redesign</title>
+<meta name="description" content="Bản mẫu giao diện mới của EchoKid: nhật ký, gợi ý và kết nối chuyên gia cho ba mẹ có con trong phổ tự kỷ.">
+<link rel="icon" href="assets/echokid-logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Nunito:wght@700;800;900&display=swap">
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+<div id="app"></div>
+<noscript><p style="padding:24px;font-family:system-ui">Bản mẫu EchoKid cần bật JavaScript.</p></noscript>
+
+<script src="js/shared/dev-errors.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.3.1/umd/react.production.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.3.1/umd/react-dom.production.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/htm/3.1.1/htm.umd.js"></script>
+
+<!-- shared by the parent app and the moderator console -->
+<script src="js/shared/core.js"></script>
+<script src="js/shared/bridge.js"></script>
+<script src="js/shared/domain.js"></script>
+<script src="js/shared/components.js"></script>
+
+<!-- sample backend: mirrors services/* and app/api/* in the EchoKid repo -->
+<script src="js/mock/ai.js"></script>
+<script src="js/mock/db.js"></script>
+<script src="js/mock/api.js"></script>
+
+<!-- parent app -->
+<script src="js/app/components.js"></script>
+<script src="js/app/charts.js"></script>
+<script src="js/app/pages/landing.js"></script>
+<script src="js/app/pages/login.js"></script>
+<script src="js/app/pages/children.js"></script>
+<script src="js/app/pages/today.js"></script>
+<script src="js/app/pages/diary.js"></script>
+<script src="js/app/pages/advice.js"></script>
+<script src="js/app/pages/experts.js"></script>
+<script src="js/app/pages/privacy.js"></script>
+<script src="js/app/shell.js"></script>
+<script src="js/app/main.js"></script>
+</body>
+</html>
